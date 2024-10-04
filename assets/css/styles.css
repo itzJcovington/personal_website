@@ -132,7 +132,7 @@ a {
     color: #fb8b24;
     text-decoration: none;
     display: inline-block;
-    animation: grow 1s ease infinite alternate;
+    animation: grow 2s ease infinite alternate;
 }
 
 .work-section {
@@ -250,10 +250,10 @@ footer {
 
 @keyframes grow {
     from {
-        transform: scale(.5);
+        transform: scale(.9);
     }
     to {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
