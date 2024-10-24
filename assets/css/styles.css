@@ -1,260 +1,72 @@
-/*Lato Font, weight: 900*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap');
-
-/*Rubik Font, style: normal*/
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
-
-/*Libre Franklin Font, weight: 300*/
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
-
-/* vv Header vv */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px
+.orange-text {
+    color: #fd7e14;
 }
 
-header ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.orange-bg {
+    background-color: #fd7e14 !important;
 }
 
-header ul li a {
-    margin: 0 15px;
-    text-decoration: none;
+.nav-orange {
+    color: #fd7e14;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-orange:hover {
+    transform: scale(1.1);
+    color: #fbb378;
+}
+
+.active-orange {
+    background-color: #fd7e14;
     color: black;
-    display: inline-block;
-    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), color 0.3s ease;
+    transition: transform 0.3s ease;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
-header ul li a:hover {
-    transform: scale(1.2);
-    color: #fb8b24;
+.active-orange:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: #fbb378;
 }
-/* ^^ Header ^^ */
-
-/* vv Multiple Pages vv */
-body {
-    display: flex;
-    height: 100%;
-    margin: 0;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, auto);
-    margin: 150px 50px;
-}
-
-h1 {
-    justify-self: center;
-    font-size: 48px;
-    text-align: center;
-    font-family: "Lato", system-ui;
-    font-weight: 900;
-    font-style: normal;
-}
-
-h2 {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px
-}
-
-.orange-txt {
-    color: #fb8b24;
-}
-
-p {
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 24px;
-}
-
-a {
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-}
-/* ^^ Multiple Pages ^^ */
-
-/* vv Home Page vv */
-.hello-msg {
-    grid-row: 2;
-    grid-column: 1 / 13;
-    animation: slideInFromLeft 1.5s ease-out forwards;
-}
-
-
 
 .profile-picture {
-    width: 234px;
-    height: 234px;
-    border-radius: 100%;
+    max-width: 300px;
+    height: auto;
     object-fit: cover;
-    justify-self: center;
-    grid-column: 1 / 13;
-    animation: slideInFromLeft 1s ease-out forwards;
 }
 
-/* ^^ Home Page ^^ */
-/* vv About Page vv */
-
-.about-section {
-    grid-column: 1 / 13;
-    text-align: center;    
+.icon-img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
 }
 
-.about-section p {
-    margin: 50px 10%;
-    text-align: left;
+.icon {
+    width: 48px;
+    height: 48px;
 }
 
-.about-section a {
-    color: #fb8b24;
-    text-decoration: none;
-    display: inline-block;
-    animation: grow 2s ease infinite alternate;
+.social-icon-img {
+    width: 24px;  
+    height: 24px;
+    transition: transform 0.3s ease;
 }
 
-.work-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-column: 1 / 7;
-    margin: 10%;
+.social-icon-img:hover {
+    transform: scale(1.1);
 }
 
-.skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-column: 7 / 13;
-    margin: 10%;
+.text-bg-dark {
+    transition: background-color 2s ease;
 }
 
-.work-section li {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
+.transparent-header {
+    background-color: rgba(33, 37, 41, 0.9) !important;
 }
 
-.skills-section li {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
+.portfolio-img {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
 }
-
-.work-section span {
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-}
-
-.skills-section span {
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-}
-/* ^^ About Page ^^ */
-/* vv Footer vv */
-
-footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.social-icons {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-.social-icons:hover {
-    transform: scale(1.2);
-}
-
-/* FOOTER */
-/* MEDIA */
-
-@media screen and (max-width: 430px) {
-
-    /* vv Header vv */
-    header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    header ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header ul li {
-        margin: 15px;
-        font-size: 10vw;
-        
-    }
-    /* ^^ Header ^^ */
-
-    /* vv Multiple Pages vv */
-    main {
-        margin: 10px 10px 40px;
-    }
-    /* ^^ Multiple Pages ^^ */
-    
-}
-
-/* MEDIA */
-/* KEYFRAMES */
-
-@keyframes slideInFromLeft {  
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes grow {
-    from {
-        transform: scale(.9);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-
-/* KEYFRAMES */
