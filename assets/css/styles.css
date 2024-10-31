@@ -70,3 +70,33 @@
     object-fit: cover;
     object-position: top left;
 }
+
+input:focus, textarea:focus {
+    border-color: #ffa500 !important; /* Set a custom border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25) !important; /* Adjust opacity as needed */
+}
+
+.black-text {
+    color: black;
+}
+
+.submit-btn {
+    background: #fd7e14;
+    color: black;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #fbb378;
+    color: black;
+    transform: scale(1.1);
+}
+
+.vh-93 {
+    height: 93vh !important
+}
+
+.pt-12vw {
+    padding-top: 12vw !important;
+}

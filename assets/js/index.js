@@ -1,33 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    
+document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("main > div");
     const navLinks = document.querySelectorAll(".nav-link");
     const header = document.querySelector(".text-bg-dark");
-    
+
+    // Sets the active navigation link based on the current scroll position
     function setActiveLink() {
-
         let index = sections.length;
-        
-        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
-        navLinks.forEach((link) => {
-            link.classList.remove("active-orange");
-            link.classList.add("nav-orange");
+        // Find the section that is currently in view
+        while (--index && window.scrollY + 500 < sections[index].offsetTop) {}
+
+        navLinks.forEach((link, i) => {
+            link.classList.toggle("active-orange", i === index);
+            link.classList.toggle("nav-orange", i !== index);
         });
+    }
 
-        navLinks[index].classList.add("active-orange");
-        navLinks[index].classList.remove("nav-orange");
+    // Handles scroll events to update the active link and header transparency
+    function handleScroll() {
+        setActiveLink();
+        header.classList.toggle("transparent-header", window.scrollY > 90);
     }
 
     setActiveLink();
-
-    window.addEventListener("scroll", setActiveLink);
-
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 90) {
-            header.classList.add("transparent-header");
-        } else {
-            header.classList.remove("transparent-header");
-        }
-    });
+    window.addEventListener("scroll", handleScroll);
 });
