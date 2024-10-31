@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let index = sections.length;
 
         // Find the section that is currently in view
-        while (--index && window.scrollY + 500 < sections[index].offsetTop) {}
+        while (--index && window.scrollY + 200 < sections[index].offsetTop) {}
 
         navLinks.forEach((link, i) => {
             link.classList.toggle("active-orange", i === index);
