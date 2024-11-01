@@ -1,29 +1,25 @@
-# My Personal Website
+# Personal Website
 
-This repository contains the source code for my personal portfolio website, showcasing my web development skills and projects. The website was built using **HTML**, **CSS**, and utilizes **Flexbox** and **Grid** for layout and responsiveness.
+Welcome to my personal website! This site serves as a portfolio showcasing my skills, projects, and experience as a web developer. You can visit it here: [itzjcovington.github.io/personal_website](https://itzjcovington.github.io/personal_website/)
 
-## Features
+## About Me
 
-- **Home**: A welcome page that introduces who I am and what I do.
-- **About Me**: Learn more about my background, skills, and experience in web development.
-- **Projects**: A section highlighting the web development projects I've worked on.
-- **Contact**: Provides a way to get in touch with me.
+I'm Jake Covington, a front-end and back-end web developer with almost a year of experience. I started learning web development in January 2024, focusing on HTML, CSS, JavaScript, Node.js, Express.js, and more. I'm constantly working to expand my skills and take on new challenges.
 
 ## Technologies Used
 
-- **HTML**: Structure and content of the website.
-- **CSS**: Styling and layout.
-- **Flexbox & Grid**: Used for creating responsive and flexible layouts.
-- **Version Control**: Git & GitHub
+- **HTML & CSS**: To structure and style the website, providing a clean and responsive layout.
+- **JavaScript**: For adding interactivity and enhancing the user experience.
+- **Bootstrap**: For a responsive and consistent design.
+- **GitHub Pages**: Hosting the website using GitHub Pages.
+- **reCAPTCHA**: For bot protection on forms.
+- **Formspree**: To handle form submissions easily.
 
-## Live Demo
+## License
 
-You can view the live version of the website [here](https://itzjcovington.github.io/personal_website/index.html).
+This project is open-source and available under the MIT License.
 
-## Installation & Usage
+## Contact
 
-To view the website locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/itzjcovington/personal_website.git
+- **Email**: [Jakecovington28@yahoo.com](mailto:Jakecovington28@yahoo.com)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/itzjcovington)
